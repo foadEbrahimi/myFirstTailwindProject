@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <title></title>
+  </head>
+  <body class="bg-gray-600">
+    <nav>
+      <div class="text-white flex justify-between p-5">
+        <div class="logo">
+          <img src="./assets/images/tailwind-css.svg" class="w-12" alt="" />
+        </div>
+        <div class="list hidden md:flex">
+          <ul class="flex gap-x-4 lg:gap-x-20">
+            <li class="cursor-pointer hover:text-sky-600 transition">
+              Product
+            </li>
+            <li class="cursor-pointer hover:text-sky-600 transition">
+              Features
+            </li>
+            <li class="cursor-pointer hover:text-sky-600 transition">
+              Marketplace
+            </li>
+            <li class="cursor-pointer hover:text-sky-600 transition">
+              Company
+            </li>
+          </ul>
+        </div>
+        <div
+          class="group login text-lg flex items-center space-x-1 cursor-pointer transition hover:text-sky-600"
+        >
+          <span class="">Log in </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="white"
+            class="bi bi-arrow-right mt-0.5 group-hover:fill-sky-600"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+            />
+          </svg>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div
+        class="section1 mt-10 flex justify-center items-center flex-col space-y-5 selection:text-red-700 selection:bg-blue-600"
+      >
+        <h1 class="text-white font-bold text-3xl lg:text-4xl">
+          Simple pricing, no commitment
+        </h1>
+        <p class="text-[#fff9] text-center max-w-4xl">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+          numquam eligendi quos odit doloribus molestiae voluptatum quos odit
+          doloribus.
+        </p>
+      </div>
+      <div
+        class="mt-20 px-5 grid lg:grid-cols-3 space-y-5 lg:space-y-0 space-x-4"
+      >
+        <div
+          class="card px-12 py-10 bg-transparent shadow-black shadow-2xl rounded-2xl min-w-sm"
+        >
+          <h4 class="text-white font-bold">Starter</h4>
+          <div class="flex my-3 space-x-4 text-white">
+            <h1 class="text-4xl font-bold">$15</h1>
+            <div class="flex flex-col">
+              <h6 class="text-slate-300">USD</h6>
+              <h6 class="text-slate-300">Billed monthly</h6>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="w-full block p-2 rounded-md font-semibold text-white text-center bg-gray-600 hover:bg-gray-500"
+            >Buy this Plan</a
+          >
+          <div class="list mt-5">
+            <ul class="flex flex-col text-white text-base space-y-4">
+              <li
+                class="border-t-2 border-gray-500 pt-1 flex items-center gap-x-1.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Basic invoicing
+              </li>
+              <li
+                class="border-t-2 border-gray-500 pt-1 flex items-center gap-x-1.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Easy to use accounting
+              </li>
+              <li
+                class="border-t-2 border-gray-500 pt-1 flex items-center gap-x-1.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Mutli-accounts
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card px-12 py-10 bg-white rounded-2xl min-w-sm">
+          <h4 class="font-bold">Scale</h4>
+          <div class="flex my-3 space-x-4 text-black">
+            <h1 class="text-4xl font-bold">$60</h1>
+            <div class="flex flex-col">
+              <h6>USD</h6>
+              <h6>Billed monthly</h6>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="w-full block p-2 rounded-md font-semibold text-black text-center bg-indigo-700 hover:bg-indigo-500"
+            >Buy this Plan</a
+          >
+          <div class="list mt-5">
+            <ul class="flex flex-col text-base space-y-4">
+              <li
+                class="border-t-2 border-gray-200 pt-1 flex items-center gap-x-1.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="blue"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Advanced invoicing
+              </li>
+              <li
+                class="border-t-2 border-gray-200 pt-1 flex items-center gap-x-1.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="blue"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Easy to use accounting
+              </li>
+              <li
+                class="border-t-2 border-gray-200 pt-1 flex items-center gap-x-1.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="blue"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Mutli-accounts
+              </li>
+              <li
+                class="border-t-2 border-gray-200 pt-1 flex items-center gap-x-1.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="blue"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Tax planning toolkit
+              </li>
+              <li
+                class="border-t-2 border-gray-200 pt-1 flex items-center gap-x-1.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="blue"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                VAT & VATMOSS filing
+              </li>
+              <li
+                class="border-t-2 border-gray-200 pt-1 flex items-center gap-x-1.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="blue"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Free bank transfers
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="card px-12 py-10 bg-transparent shadow-black shadow-2xl rounded-2xl min-w-sm"
+        >
+          <h4 class="text-white font-bold">Growth</h4>
+          <div class="flex my-3 space-x-4 text-white">
+            <h1 class="text-4xl font-bold">$30</h1>
+            <div class="flex flex-col">
+              <h6 class="text-slate-300">USD</h6>
+              <h6 class="text-slate-300">Billed monthly</h6>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="w-full block p-2 rounded-md font-semibold text-white text-center bg-gray-600 hover:bg-gray-500"
+            >Buy this Plan</a
+          >
+          <div class="list mt-5">
+            <ul class="flex flex-col text-white text-base space-y-4">
+              <li
+                class="border-t-2 border-gray-200 pt-1 flex items-center gap-x-1.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Basic invoicing
+              </li>
+              <li
+                class="border-t-2 border-gray-200 pt-1 flex items-center gap-x-1.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Easy to use accounting
+              </li>
+              <li
+                class="border-t-2 border-gray-200 pt-1 flex items-center gap-x-1.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Mutli-accounts
+              </li>
+              <li
+                class="border-t-2 border-gray-200 pt-1 flex items-center gap-x-1.5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+                Tax planning toolkit
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./assets/js/script.js"></script>
+</html>
